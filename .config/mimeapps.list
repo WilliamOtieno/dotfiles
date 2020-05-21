@@ -1,0 +1,5 @@
+[Added Associations]
+application/octet-stream=vim.desktop;
+
+[Default Applications]
+x-scheme-handler/mailto=brave-browser.desktop
