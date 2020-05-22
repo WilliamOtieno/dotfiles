@@ -140,7 +140,7 @@ layouts = [
 
 ##### COLORS #####
 colors = [
-    ["#2e3440", "#2e3440"],
+    ["#2b303b", "#2b303b"],
     # ["#8fbcbb", "#8fbcbb"],
     ["#88c0d0", "#88c0d0"],
     ["#eceff4", "#eceff4"],
@@ -176,7 +176,7 @@ def init_widgets_list():
         widget.TextBox(
             text = "",
             background = colors[0],
-            foreground="#ffffff",
+            foreground="#7de1e8",
             fontsize=30
         ),
         widget.Sep(
