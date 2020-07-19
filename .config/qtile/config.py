@@ -13,8 +13,8 @@ from libqtile.config import Click, Drag, Group, Key, Screen
 ##### DEFINING SOME VARIABLES #####
 
 mod = "mod4"  # Sets mod key to SUPER/WINDOWS
-myTerm = "termite"  # My terminal of choice
-myConfig = "/home/samarth/.config/qtile/config.py"  # The Qtile config file location
+myTerm = "xfce4-terminal"  # My terminal of choice
+myConfig = "/home/william/.config/qtile/config.py"  # The Qtile config file location
 
 ##### KEYBINDINGS #####
 keys = [
@@ -62,16 +62,14 @@ keys = [
     ### My applications launched with SUPER + ALT + KEY
 
     Key([mod, "mod1"], "g", lazy.spawn("gimp")),
-    Key([mod, "mod1"], "q", lazy.spawn("qutebrowser")),
-    Key([mod, "mod1"], "i", lazy.spawn("modem-manager-gui")),
+    Key([mod, "mod1"], "l", lazy.spawn("lutris")),
     Key([mod, "mod1"], "s", lazy.spawn("spotify")),
-    Key([mod, "mod1"], "t", lazy.spawn("xterm")),
-    Key([mod, "mod1"], "a", lazy.spawn("alacritty")),
+    Key([mod, "mod1"], "t", lazy.spawn("xfce4-terminal")),
+    Key([mod, "mod1"], "v", lazy.spawn("vlc")),
     Key([mod, "mod1"], "x", lazy.spawn("firefox")),
-    Key([mod, "mod1"], "b", lazy.spawn("brave")),
-    Key([mod, "mod1"], "e", lazy.spawn("emacs")),
-    Key([mod, "mod1"], "f", lazy.spawn(myTerm + " -e /home/samarth/.config/vifm/scripts/vifmrun ")),
-    Key([mod, "mod1"], "m", lazy.spawn(myTerm + " -e mocp")),
+    Key([mod, "mod1"], "p", lazy.spawn("pycharm")),
+
+
 ]
 
 ##### GROUPS #####
@@ -553,7 +551,7 @@ focus_on_window_activation = "smart"
 @hook.subscribe.startup_once
 def start_once():
     home = os.path.expanduser("~")
-    subprocess.call(["/home/samarth/.config/qtile/autostart.sh"])
+    subprocess.call(["/home/william/.config/qtile/autostart.sh"])
 
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this

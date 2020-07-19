@@ -11,7 +11,7 @@ from typing import List  # noqa: F401
 ##### DEFINING SOME VARIABLES #####
 mod = "mod4"  # Sets mod key to SUPER/WINDOWS
 myTerm = "terminator"  # My terminal of choice
-myConfig = "/home/samarth/.config/qtile/config.py"  # The Qtile config file location
+myConfig = "/home/william/.config/qtile/config.py"  # The Qtile config file location
 
 ##### KEYBINDINGS #####
 keys = [
@@ -85,13 +85,13 @@ keys = [
         lazy.layout.toggle_split(),  # Toggle between split and unsplit sides of stack
     ),
     ### Dmenu scripts launched with ALT + CTRL + KEY
-    Key(["mod1", "control"], "e", lazy.spawn("bash /home/samarth/.dmenu/dmenu-edit-configs.sh")),
-    Key(["mod1", "control"], "m", lazy.spawn("bash /home/samarth/.dmenu/dmenu-sysmon.sh")),
+    Key(["mod1", "control"], "e", lazy.spawn("bash /home/william/.dmenu/dmenu-edit-configs.sh")),
+    Key(["mod1", "control"], "m", lazy.spawn("bash /home/william/.dmenu/dmenu-sysmon.sh")),
     Key(["mod1", "control"], "p", lazy.spawn("passmenu")),
     Key(["mod1", "control"], "n", lazy.spawn("networkmanager_dmenu")),
     Key(["mod1", "control"], "i", lazy.spawn("./.dmenu/dmenu-surfraw.sh")),
     Key(["mod1", "control"], "t", lazy.spawn("./.dmenu/dmenu-trading.sh")),
-    Key(["mod1", "control"], "s", lazy.spawn("bash /home/samarth/.dmenu/dmenu-scrot.sh")),
+    Key(["mod1", "control"], "s", lazy.spawn("bash /home/william/.dmenu/dmenu-scrot.sh")),
     ### My applications launched with SUPER + ALT + KEY
     Key([mod, "mod1"], "g", lazy.spawn("gimp")),
     Key([mod, "mod1"], "n", lazy.spawn("nautilus")),
@@ -103,7 +103,7 @@ keys = [
     Key([mod, "mod1"], "b", lazy.spawn("brave")),
     Key([mod, "mod1"], "l", lazy.spawn(myTerm + " -e lynx")),
     Key([mod, "mod1"], "e", lazy.spawn(myTerm + " -e neomutt")),
-    Key([mod, "mod1"], "f", lazy.spawn(myTerm + " -e /home/samarth/.config/vifm/scripts/vifmrun ")),
+    Key([mod, "mod1"], "f", lazy.spawn(myTerm + " -e /home/william/.config/vifm/scripts/vifmrun ")),
     # Key([mod, "mod1"], "f", lazy.spawn(myTerm + " -e ranger")),
     Key([mod, "mod1"], "m", lazy.spawn(myTerm + " -e mocp")),
 ]
