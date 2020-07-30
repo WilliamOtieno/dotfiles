@@ -66,9 +66,9 @@ keys = [
     Key([mod, "mod1"], "i", lazy.spawn("modem-manager-gui")),
     Key([mod, "mod1"], "s", lazy.spawn("spotify")),
     Key([mod, "mod1"], "t", lazy.spawn("xterm")),
-    Key([mod, "mod1"], "a", lazy.spawn("alacritty")),
-    Key([mod, "mod1"], "x", lazy.spawn("firefox")),
-    Key([mod, "mod1"], "b", lazy.spawn("brave")),
+    Key([mod, "mod1"], "a", lazy.spawn("atom")),
+    Key([mod, "mod1"], "b", lazy.spawn("firefox")),
+    Key([mod, "mod1"], "x", lazy.spawn("brave")),
     Key([mod, "mod1"], "e", lazy.spawn("emacs")),
     Key([mod, "mod1"], "f", lazy.spawn(myTerm + " -e /home/samarth/.config/vifm/scripts/vifmrun ")),
     Key([mod, "mod1"], "m", lazy.spawn(myTerm + " -e mocp")),
@@ -110,7 +110,7 @@ layout_theme = {
 layouts = [
     # layout.Max(),
     # layout.Stack(num_stacks=2),
-    # layout.MonadWide(**layout_theme),
+    layout.MonadWide(**layout_theme),
     # layout.Bsp(**layout_theme),
     # layout.Stack(stacks=2, **layout_theme),
     # layout.Columns(**layout_theme),
@@ -173,12 +173,12 @@ def init_widgets_list():
             foreground=colors[2],
             background=colors[0]
         ),
-        widget.TextBox(
-            text = "",
-            background = colors[0],
-            foreground="#7de1e8",
-            fontsize=30
-        ),
+        # widget.TextBox(
+        #     text = "",
+        #     background = colors[0],
+        #     foreground="#7de1e8",
+        #     fontsize=30
+        # ),
         widget.Sep(
             linewidth=0,
             padding=6,
