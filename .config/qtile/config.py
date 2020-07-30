@@ -100,10 +100,10 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
 layout_theme = {
-    "border_width": 2,
-    "margin": 4,
-    "border_focus": "#8fbcbb",
-    "border_normal": "#1D2330",
+    "border_width": 0,
+    "margin": 20,
+    # "border_focus": "#8fbcbb",
+    # "border_normal": "#1D2330",
 }
 
 ##### THE LAYOUTS #####
@@ -497,7 +497,7 @@ def init_widgets_screen1():
 
 def init_screens():
     return [
-        Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, size=22)),
+        Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, size=30)),
     ]
 
 
