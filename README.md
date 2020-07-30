@@ -7,6 +7,10 @@ My configs are heavyily inspired by Derek Taylor's (creator of the DistroTube Yo
 
 I am I high-school student, so I do not always have the time to write all configs from scratch. (Well, some are written from scratch.)
 
+**Some things to look after**
+* I have used absolute paths almost exclusively, so change that you your own path wherever files are referenced.
+* For the picom config to work, use [ibhagwan's fork](https://github.com/ibhagwan/picom) of picom. Plus, use this command to start picom `picom --config /path/to/picom.conf --experimental-backends`
+
 I am still in the learning phase, hope you all like my work.
 
 ### Screenshots
