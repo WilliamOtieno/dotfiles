@@ -444,10 +444,10 @@ dtXPConfig = def
       , bgHLight            = "#c792ea"
       , fgHLight            = "#000000"
       , borderColor         = "#535974"
-      , promptBorderWidth   = 2
+      , promptBorderWidth   = 0
       , promptKeymap        = dtXPKeymap
       -- , position            = Top
-      , position            = CenteredAt { xpCenterY = 0.3, xpWidth = 0.3 }
+      , position            = CenteredAt { xpCenterY = 0.024, xpWidth = 0.984375 }
       , height              = 30
       , historySize         = 256
       , historyFilter       = id
@@ -680,19 +680,19 @@ myManageHook = composeAll
      -- I'm doing it this way because otherwise I would have to write out
      -- the full name of my workspaces.
      [ className =? "obs"     --> doShift ( myWorkspaces !! 7 )
-     , title =? "firefox"     --> doShift ( myWorkspaces !! 1 )
+     , title =? "chromium"     --> doShift ( myWorkspaces !! 1 )
      , className =? "mpv"     --> doShift ( myWorkspaces !! 7 )
      , className =? "vlc"     --> doShift ( myWorkspaces !! 7 )
      , className =? "Gimp"    --> doShift ( myWorkspaces !! 8 )
      , className =? "Gimp"    --> doFloat
      , title =? "Oracle VM VirtualBox Manager"     --> doFloat
      , className =? "VirtualBox Manager" --> doShift  ( myWorkspaces !! 4 )
-     , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
+     , (className =? "chromium" <&&> resource =? "Dialog") --> doFloat  -- Float Chromium Dialog
      ] <+> namedScratchpadManageHook myScratchPads
 
 myLogHook :: X ()
 myLogHook = fadeInactiveLogHook fadeAmount
-    where fadeAmount = 1.0
+    where fadeAmount = 0.5
 
 myKeys :: [(String, X ())]
 myKeys =
@@ -787,7 +787,7 @@ myKeys =
 
     --- My Applications (Super+Alt+Key)
         , ("M-M1-a", spawn (myTerminal ++ " -e ncpamixer"))
-        , ("M-M1-b", spawn ("firefox"))
+        , ("M-M1-b", spawn ("chromium"))
         -- , ("M-M1-e", spawn (myTerminal ++ " -e neomutt"))
         , ("M-M1-f", spawn (myTerminal ++ " -e ranger"))
         , ("M-M1-i", spawn (myTerminal ++ " -e irssi"))
@@ -809,8 +809,6 @@ myKeys =
         , ("<XF86AudioMute>",   spawn "amixer set Master toggle; if amixer get Master | grep -Fq \"[off]\"; then volnoti-show -m; else volnoti-show $(amixer get Master | grep -Po \"[0-9]+(?=%)\" | tail -1); fi")
         , ("<XF86AudioLowerVolume>", spawn "amixer set Master 5%- && volnoti-show $(amixer get Master | grep -Po \"[0-9]+(?=%)\" | tail -1)")
         , ("<XF86AudioRaiseVolume>", spawn "amixer set Master 5%+ && volnoti-show $(amixer get Master | grep -Po \"[0-9]+(?=%)\" | tail -1)")
-        , ("<XF86HomePage>", spawn "firefox")
-        , ("<XF86Search>", safeSpawn "firefox" ["https://www.google.com/"])
         , ("<XF86Mail>", runOrRaise "geary" (resource =? "thunderbird"))
         , ("<XF86Calculator>", runOrRaise "gcalctool" (resource =? "gcalctool"))
         , ("<XF86Eject>", spawn "toggleeject")

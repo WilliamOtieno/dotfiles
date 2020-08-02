@@ -7,12 +7,6 @@
 #installation via yay -S oh-my-zsh-git
 export ZSH=/usr/share/oh-my-zsh/
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/home/samarth/.emacs.d/bin"
-export PATH="$PATH:/home/samarth/.local/lib/python3.8/site-packages"
-export PATH="$PATH:/home/samarth/.local/bin"
-export PATH="$PATH:/home/samarth/.dmenu"
-export PATH="$PATH:/home/samarth/.vim/bundle/vim-live-latex-preview/bin"
-
 source /home/samarth/.zsh_profile
 
 # Set name of the theme to load --- if set to "random", it will

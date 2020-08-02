@@ -5,7 +5,7 @@
 ! ------------------------------------------------------------------------------
 
 xterm*font: 7x13
-xterm*faceName: Mononoki:size=14:antialias=false
+xterm*faceName: Monospace:size=12:antialias=false
 xterm*loginShell: true
 xterm*vt100*geometry: 90x34
 xterm*saveLines: 2000
@@ -95,11 +95,11 @@ URxvt*color15: #ffffff
 
 ! fonts
 URxvt*letterSpace: 	    		-2
-URxvt*font:                 	xft:Mononoki:regular:size=14
-URxvt*imFont:               	xft:Mononoki:regular:size=14
-URxvt*boldFont:             	xft:Mononoki:bold:size=14
-URxvt*italicFont:           	xft:Mononoki:italic:size=14
-URxvt*boldItalicFont:     		xft:Mononoki:regular:size=14
+URxvt*font:                 	xft:Monospace:regular:size=12
+URxvt*imFont:               	xft:Monospace:regular:size=12
+URxvt*boldFont:             	xft:Monospace:bold:size=12
+URxvt*italicFont:           	xft:Monospace:italic:size=12
+URxvt*boldItalicFont:     		xft:Monospace:regular:size=12
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
@@ -147,7 +147,7 @@ UXTerm*termName: xterm-256color
 
 UXTerm*cursorColor:        white
 UXTerm*VT100.geometry:     90x30
-UXTerm*font:               Mononoki
+UXTerm*font:               Monospace
 UXTerm*faceSize:		   12
 UXTerm*dynamicColors:      true
 UXTerm*utf8:               2
