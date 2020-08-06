@@ -1,0 +1,23 @@
+export EDITOR="vim"
+export READER="zathura"
+export VISUAL="vim"
+export TERMINAL="termite"
+export BROWSER="chromium"
+export VIDEO="mpv"
+export IMAGE="feh"
+
+export DENO_INSTALL="/home/samarth/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+export PATH="/home/samarth/.npm-global/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/home/samarth/.emacs.d/bin"
+export PATH="$PATH:/home/samarth/.local/lib/python3.8/site-packages"
+export PATH="$PATH:/home/samarth/.local/bin"
+export PATH="$PATH:/home/samarth/.dmenu"
+export PATH="$PATH:/home/samarth/.vim/bundle/vim-live-latex-preview/bin"
+
+pdfcompress ()
+{
+   gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dPDFSETTINGS=/screen -dEmbedAllFonts=true -dSubsetFonts=true -dColorImageDownsampleType=/Bicubic -dColorImageResolution=100 -dGrayImageDownsampleType=/Bicubic -dGrayImageResolution=100 -dMonoImageDownsampleType=/Bicubic -dMonoImageResolution=100 -sOutputFile=$1.compressed.pdf $1;
+}
+

@@ -1,0 +1,128 @@
+Jul 31 13:40 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 13:40 : avahi: Service 'Music Player @ arcolinux' successfully established.
+Jul 31 13:40 : client: [0] opened from [::1]:36754
+Jul 31 13:41 : client: [0] closed
+Jul 31 13:42 : client: [1] opened from [::1]:36756
+Jul 31 13:42 : client: [1] closed
+Jul 31 13:42 : client: [2] opened from [::1]:36758
+Jul 31 13:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 13:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 13:42 : client: [3] opened from [::1]:36760
+Jul 31 13:42 : client: [3] closed
+Jul 31 13:42 : client: [4] opened from [::1]:36762
+Jul 31 13:42 : client: [4] closed
+Jul 31 13:42 : client: [5] opened from [::1]:36764
+Jul 31 13:42 : client: [5] closed
+Jul 31 13:42 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Jul 31 13:42 : player: played "Arijit Singh - Woh Din.mp3"
+Jul 31 13:42 : client: [2] closed
+Jul 31 14:12 : client: [6] opened from [::1]:36766
+Jul 31 14:13 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Jul 31 14:13 : player: played "Arijit Singh - Woh Din.mp3"
+Jul 31 14:13 : client: [6] closed
+Jul 31 16:11 : avahi: Client Disconnected, will reconnect shortly
+Jul 31 18:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 18:34 : avahi: Service 'Music Player @ arcolinux' successfully established.
+Jul 31 19:32 : client: [0] opened from [::1]:36950
+Jul 31 19:32 : client: [0] closed
+Jul 31 20:16 : avahi: Client Disconnected, will reconnect shortly
+Jul 31 20:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 20:23 : avahi: Service 'Music Player @ arcolinux' successfully established.
+Jul 31 22:02 : avahi: Client Disconnected, will reconnect shortly
+Aug 01 08:41 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 01 08:41 : avahi: Service 'Music Player @ arcolinux' successfully established.
+Aug 01 19:14 : client: [0] opened from [::1]:45564
+Aug 01 19:14 : client: [0] closed
+Aug 01 19:14 : client: [1] opened from [::1]:45582
+Aug 01 19:14 : client: [1] closed
+Aug 01 19:14 : update: added /Arijit Singh - Jaan Nisaar (Arijit).mp3
+Aug 01 19:14 : update: added /Ed Sheeran - How Would You Feel (Paean).mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Bibia Be Ye Ye.mp3
+Aug 01 19:14 : update: added /Farhan Akhtar - Senorita.mp3
+Aug 01 19:14 : update: added /Amit Trivedi - Namo Namo.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Supermarket Flowers.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Barcelona.mp3
+Aug 01 19:14 : update: added /Daði Freyr - Think About Things.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Dive.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Perfect.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Castle on the Hill.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Save Myself.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - What Do I Know.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Galway Girl.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Eraser.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Shape of You.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Happier.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Hearts Dont Break Around Here.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - You Need Me I Dont Need You.mp3
+Aug 01 19:14 : update: added /Arijit Singh - Qaafirana.mp3
+Aug 01 19:14 : update: added /Prateek Kuhad - Kasoor.mp3
+Aug 01 19:14 : update: added /Asees Kaur - Jaan Nisaar (Asees).mp3
+Aug 01 19:14 : update: added /Dev Negi - Sweetheart.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - New Man.mp3
+Aug 01 19:14 : update: added /Ed Sheeran - Nancy Mulligan.mp3
+Aug 01 19:14 : client: [2] opened from [::1]:45588
+Aug 01 19:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 01 19:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 01 19:14 : client: [3] opened from [::1]:45614
+Aug 01 19:14 : client: [3] closed
+Aug 01 19:14 : client: [4] opened from [::1]:45616
+Aug 01 19:14 : client: [4] closed
+Aug 01 19:14 : client: [5] opened from [::1]:45618
+Aug 01 19:14 : client: [5] closed
+Aug 01 19:14 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:18 : player: played "Farhan Akhtar - Senorita.mp3"
+Aug 01 19:18 : client: [6] opened from [::1]:46098
+Aug 01 19:18 : client: [6] closed
+Aug 01 19:18 : client: [7] opened from [::1]:46100
+Aug 01 19:18 : client: [7] closed
+Aug 01 19:18 : client: [8] opened from [::1]:46102
+Aug 01 19:18 : client: [8] closed
+Aug 01 19:18 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:21 : player: played "Prateek Kuhad - Kasoor.mp3"
+Aug 01 19:21 : client: [9] opened from [::1]:46528
+Aug 01 19:21 : client: [9] closed
+Aug 01 19:21 : client: [10] opened from [::1]:46530
+Aug 01 19:21 : client: [10] closed
+Aug 01 19:21 : client: [11] opened from [::1]:46532
+Aug 01 19:21 : client: [11] closed
+Aug 01 19:21 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:24 : client: [12] opened from [::1]:46882
+Aug 01 19:24 : client: [12] closed
+Aug 01 19:24 : client: [13] opened from [::1]:46884
+Aug 01 19:24 : client: [13] closed
+Aug 01 19:24 : client: [14] opened from [::1]:46886
+Aug 01 19:24 : client: [14] closed
+Aug 01 19:24 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:28 : client: [15] opened from [::1]:47318
+Aug 01 19:28 : client: [15] closed
+Aug 01 19:28 : client: [16] opened from [::1]:47320
+Aug 01 19:28 : client: [16] closed
+Aug 01 19:28 : client: [17] opened from [::1]:47322
+Aug 01 19:28 : client: [17] closed
+Aug 01 19:29 : client: [18] opened from [::1]:47462
+Aug 01 19:29 : client: [18] closed
+Aug 01 19:29 : client: [19] opened from [::1]:47464
+Aug 01 19:29 : client: [19] closed
+Aug 01 19:29 : client: [20] opened from [::1]:47466
+Aug 01 19:29 : client: [20] closed
+Aug 01 19:29 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:33 : client: [21] opened from [::1]:48006
+Aug 01 19:33 : client: [21] closed
+Aug 01 19:33 : client: [22] opened from [::1]:48008
+Aug 01 19:33 : client: [22] closed
+Aug 01 19:33 : client: [23] opened from [::1]:48014
+Aug 01 19:33 : client: [23] closed
+Aug 01 19:33 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:36 : client: [24] opened from [::1]:48396
+Aug 01 19:36 : client: [24] closed
+Aug 01 19:36 : client: [25] opened from [::1]:48398
+Aug 01 19:36 : client: [25] closed
+Aug 01 19:36 : client: [26] opened from [::1]:48400
+Aug 01 19:36 : client: [26] closed
+Aug 01 19:36 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:36 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 01 19:39 : player: played "Dev Negi - Sweetheart.mp3"
+Aug 01 19:39 : client: [2] closed
+Aug 01 22:36 : avahi: Client Disconnected, will reconnect shortly
+Aug 02 09:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 02 09:47 : avahi: Service 'Music Player @ arcolinux' successfully established.

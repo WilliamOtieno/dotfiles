@@ -64,12 +64,22 @@ keys = [
     Key([mod, "mod1"], "g", lazy.spawn("gimp")),
     Key([mod, "mod1"], "l", lazy.spawn("lutris")),
     Key([mod, "mod1"], "s", lazy.spawn("spotify")),
+<<<<<<< HEAD
     Key([mod, "mod1"], "t", lazy.spawn("xfce4-terminal")),
     Key([mod, "mod1"], "v", lazy.spawn("vlc")),
     Key([mod, "mod1"], "x", lazy.spawn("firefox")),
     Key([mod, "mod1"], "p", lazy.spawn("pycharm")),
 
 
+=======
+    Key([mod, "mod1"], "t", lazy.spawn("xterm")),
+    Key([mod, "mod1"], "a", lazy.spawn("atom")),
+    Key([mod, "mod1"], "b", lazy.spawn("firefox")),
+    Key([mod, "mod1"], "x", lazy.spawn("brave")),
+    Key([mod, "mod1"], "e", lazy.spawn("emacs")),
+    Key([mod, "mod1"], "f", lazy.spawn(myTerm + " -e /home/samarth/.config/vifm/scripts/vifmrun ")),
+    Key([mod, "mod1"], "m", lazy.spawn(myTerm + " -e mocp")),
+>>>>>>> 25b21be8774a2532314c8977ca9def4c8a5d667e
 ]
 
 ##### GROUPS #####
@@ -98,17 +108,17 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
 layout_theme = {
-    "border_width": 2,
-    "margin": 4,
-    "border_focus": "#8fbcbb",
-    "border_normal": "#1D2330",
+    "border_width": 0,
+    "margin": 20,
+    # "border_focus": "#8fbcbb",
+    # "border_normal": "#1D2330",
 }
 
 ##### THE LAYOUTS #####
 layouts = [
     # layout.Max(),
     # layout.Stack(num_stacks=2),
-    # layout.MonadWide(**layout_theme),
+    layout.MonadWide(**layout_theme),
     # layout.Bsp(**layout_theme),
     # layout.Stack(stacks=2, **layout_theme),
     # layout.Columns(**layout_theme),
@@ -171,12 +181,12 @@ def init_widgets_list():
             foreground=colors[2],
             background=colors[0]
         ),
-        widget.TextBox(
-            text = "",
-            background = colors[0],
-            foreground="#7de1e8",
-            fontsize=30
-        ),
+        # widget.TextBox(
+        #     text = "",
+        #     background = colors[0],
+        #     foreground="#7de1e8",
+        #     fontsize=30
+        # ),
         widget.Sep(
             linewidth=0,
             padding=6,
@@ -495,7 +505,7 @@ def init_widgets_screen1():
 
 def init_screens():
     return [
-        Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, size=22)),
+        Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, size=30)),
     ]
 
 

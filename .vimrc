@@ -125,10 +125,6 @@ if has("gui_running")
     set guitablabel=%M\ %t
 endif
 
-" Colorscheme
-set background=dark
-colorscheme nord
-
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -675,8 +671,8 @@ let g:user_zen_mode='a'
 """"""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
 """"""""""""""""""""""""""""""
-ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>
-snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
+" ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>
+" snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -726,7 +722,7 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'onehalfdark',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
       \             ['fugitive', 'readonly', 'filename', 'modified'] ],
@@ -767,7 +763,7 @@ let g:ale_linters = {
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
 " Disabling highlighting
-let g:ale_set_highlights = 0
+let g:ale_set_highlights = 1
 
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
@@ -780,6 +776,9 @@ let g:ale_lint_on_enter = 0
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
-" Packages
-packadd! surround
+" Colorscheme
+syntax enable
+set t_Co=256
+set cursorline
+colorscheme dracula
 
